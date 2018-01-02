@@ -38,3 +38,5 @@ Any Pull Requests are very welcomed!
 
 ## Note
 The program requires the [requests](https://github.com/requests/requests) library. If the program doesn't work, make sure to install it.
+
+You can download a stable release from the [Releases](https://github.com/Prodicode/chromecast_youtube/releases) page or download the latest version by cloning the repository.

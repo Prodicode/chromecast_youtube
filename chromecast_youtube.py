@@ -23,7 +23,7 @@ ok = '['+bcolors.OKGREEN+'OK'+bcolors.ENDC+'] ';
 err = '['+bcolors.FAIL+'ERROR'+bcolors.ENDC+'] ';
 info = '['+bcolors.OKBLUE+'INFO'+bcolors.ENDC+'] ';
 
-parser = argparse.ArgumentParser(description="A simple python3 script that plays or stops Youtube videos on a chromecast device", epilog='Example: python3 chromecast_youtube.py -t 192.168.1.14 -v qhR1SqBjXQM --play');
+parser = argparse.ArgumentParser(description="A simple python3 script that plays or stops Youtube videos on a chromecast device. Made by Tudor Gheorghiu - Prodicode (https://prodicode.com)", epilog='Example: python3 chromecast_youtube.py -t 192.168.1.14 -v qhR1SqBjXQM --play');
 requiredArgs = parser.add_argument_group('Required');
 requiredArgs.add_argument('-t', help='The IP of the targeted Chromecast device.', required=True);
 requiredArgs.add_argument('-v', help='The video id of the youtube video which should be played', required=True);
@@ -44,7 +44,7 @@ print(ok+"Checking connection with "+args.t+" on port "+args.p);
 response = os.system("ping -p "+args.p+" -c 1 " + args.t);
 
 if response != 0:
-    sys.exit(err+"Could not connect to target");
+    print(err+"Could not connect to target");
 
 
 print(ok+"Gathering target information...");
