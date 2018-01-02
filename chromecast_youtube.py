@@ -54,12 +54,17 @@ try:
     uptime = r.json()['uptime'];
     model = r.json()['detail']['manufacturer'] + " " + r.json()['detail']['model_name'];
     device = r.json()['name'];
+    print(info+"Model: "+model);
+    print(info+"Device: "+device);
+    print(info+"Up Time: "+str(uptime));
 except:
-    sys.exit(err+"Could not connect to target");
+    print(err+"Could not get information");
+    uptime = "undefined";
+    model = "undefined";
+    device = "undefined";
 
-print(info+"Model: "+model);
-print(info+"Device: "+device);
-print(info+"Up Time: "+str(uptime));
+
+
 
 if args.play:
     try:
