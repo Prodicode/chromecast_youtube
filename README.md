@@ -1,4 +1,4 @@
-# Chromecast Youtube
+# Chromecast Youtube 
 
 ## Description
 Chromecast Youtube is a simple python3 script that can play and stop specific YouTube videos on a chromecast device from the CLI.
