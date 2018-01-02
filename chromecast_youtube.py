@@ -1,3 +1,5 @@
+#Copyright Tudor Gheorghiu - Prodicode Solutions S.R.L.
+
 import argparse;
 import sys;
 import urllib.request;
