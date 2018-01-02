@@ -1,4 +1,5 @@
 #Copyright Tudor Gheorghiu - Prodicode Solutions S.R.L.
+#Github: https://github.com/Prodicode/chromecast_youtube
 
 import argparse;
 import sys;
